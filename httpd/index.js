@@ -3,18 +3,46 @@
 let http = require('http');
 
 http.createServer((request, response) => {
-// 傳送 HTTP header
+let fs = require('fs');
+let postData = ''; // POST 資料
 
-// HTTP Status: 200 : OK
-// Content Type: text/plain
-response.writeHead(200, {
-'Content-Type': 'text/plain'
+// 利⽤ 'data' event 消耗掉 data chunk;
+// 'end' event 才會被 fired
+request.on('data', (chunk) =>
+postData += chunk;
+
+console.log(
+' 接收的 POST data ⽚段 k: [' + chunk + '].'
+);
 });
 
-// 傳送回應內容。
-response.end('Hello World!\n');
+request.on('end', () => {
+switch (request.url) {
+case '/':
+fs.readFile('../htdocs/index.html', (err, data) => {
+if (err) {
+console.log(' 檔案讀取錯誤');
+}
+else {
+response.writeHead(200, {
+'Content-Type': 'text/html'
+});
 
-console.log('request.headers: \n', request.headers)
+response.write(data);
+response.end();
+}
+});
+
+break;
+
+default:
+console.log(' 未定義的存取: ' + request.url);
+
+response.end();
+
+break;
+}
+});
 }).listen(8088);
 
 // log message to Console
