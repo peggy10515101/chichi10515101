@@ -7,11 +7,11 @@ const routingTable = {
     url: '../htdocs/index.html',
     type: 'text/html'
   },
-  '/styles.css': {
+  '/assets/css/styles.css': {
     url: '../htdocs/assets/css/styles.css',
     type: 'text/css'
   },
-  '/SokobanClone_byVellidragon.png': {
+  '/assets/png/SokobanClone_byVellidragon.png': {
     url: '../htdocs/assets/png/SokobanClone_byVellidragon.png',
     type: 'image/png'
   },
