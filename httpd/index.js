@@ -13,7 +13,7 @@ const routingTable = {
   },
   '/SokobanClone_byVellidragon.png': {
     url: '../htdocs/assets/png/SokobanClone_byVellidragon.png',
-    type: 'text/css'
+    type: 'image/png'
   },
 };
 
