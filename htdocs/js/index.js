@@ -1,7 +1,7 @@
 /**
  *  @file       index.js
  *  @brief      The entry file of Sokoban.
- *  @author     Yiwei Chiao (ywchiao@gmail.com)
+ *  @author     peggy10515101 (pinkypeggy123@gmail.com)
  *  @date       11/17/2017 created.
  *  @date       12/07/2017 last modified.
  *  @version    0.1.0
