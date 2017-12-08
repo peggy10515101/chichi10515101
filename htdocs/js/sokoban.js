@@ -1,5 +1,5 @@
 /**
- *  @file       sokoban.js
+ *  @file       index.js
  *  @brief      The entry file of Sokoban.
  *  @author     peggy10515101 (pinkypeggy123@gmail.com)
  *  @date       11/17/2017 created.
@@ -65,4 +65,4 @@ window.addEventListener('load', () => {
   });
 });
 
-// sokoban.js
+// index.js
