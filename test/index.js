@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
 console.log("index.js loaded");
 
 let h1 = document.createElement('h1');
-let msg = document.createTextNode(' 這是 <h1> 的⽂字訊息');
+let msg = document.createTextNode('Hello');
 
 h1.appendChild(msg);
 
