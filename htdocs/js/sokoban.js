@@ -179,7 +179,6 @@ let prototypeGameState = {
 
   isBoxOnGoal: function ({x, y}) {
     return (this.level[y].charAt(x) == SOKOBAN.BOX_ON_GOAL);
-       alert ( "you win !!!" );
   },
 
   isGoal: function ({x, y}) {
@@ -238,6 +237,7 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
+      alert ( "you win !!!" );
     }
     else {
       this.putBox(cell);
