@@ -237,7 +237,7 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
-      if (putBoxOnGoal(cell)!=NULL)
+      if (this!=NULL)
        {
          alert ( "you win !!!" );
        }
