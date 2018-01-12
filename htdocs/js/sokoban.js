@@ -102,7 +102,6 @@ let tileset = {
       y: 0,
       width: 32,
       height: 32,
-      alert("you win!!!"),
     },
     wall: {
       x: 64,
@@ -180,6 +179,7 @@ let prototypeGameState = {
 
   isBoxOnGoal: function ({x, y}) {
     return (this.level[y].charAt(x) == SOKOBAN.BOX_ON_GOAL);
+       alert ( "you win !!!" );
   },
 
   isGoal: function ({x, y}) {
