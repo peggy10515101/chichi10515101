@@ -1,7 +1,7 @@
 /**
  *  @file       index.js
  *  @brief      The entry file of Sokoban.
- *  @author     Yiwei Chiao (ywchiao@gmail.com)
+ *  @author     peggy lian (pinkypeggy123@gmail.com)
  *  @date       11/17/2017 created.
  *  @date       01/05/2018 last modified.
  *  @version    0.1.0
@@ -102,6 +102,7 @@ let tileset = {
       y: 0,
       width: 32,
       height: 32,
+      alert("you win!!!"),
     },
     wall: {
       x: 64,
@@ -592,7 +593,6 @@ let controlPane = (sokoban) => {
     btn.value = level;
 
     btn.addEventListener('click', e => {
-      alert(`${e.target.valuefa} clicked`);
       sokoban.start(e.target.value);
     });
 
