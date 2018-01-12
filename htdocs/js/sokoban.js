@@ -592,6 +592,7 @@ let controlPane = (sokoban) => {
     btn.value = level;
 
     btn.addEventListener('click', e => {
+      alert(`${e.target.valuefa} clicked`);
       sokoban.start(e.target.value);
     });
 
