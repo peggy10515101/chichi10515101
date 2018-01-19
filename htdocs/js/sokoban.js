@@ -567,7 +567,7 @@ let sokoban = {
     this.move(e);
 
     if (this.gameover()) {
-      this.winning = alert ( "you win !!!" );
+      alert ( "you win !!! " );
     }
     this.paint();
   },
