@@ -237,6 +237,7 @@ let prototypeGameState = {
   moveBoxIn: function (cell) {
     if (this.isGoal(cell)) {
       this.putBoxOnGoal(cell);
+      alert( "you win !!!" );
       }
     else {
       this.putBox(cell);
@@ -565,10 +566,6 @@ let sokoban = {
    */
   update: function (e) {
     this.move(e);
-
-    if (this.gameover()) {
-      alert ( "you win !!! " );
-    }
     this.paint();
   },
 };
