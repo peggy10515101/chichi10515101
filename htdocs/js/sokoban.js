@@ -400,7 +400,7 @@ let prototypeGameState = {
 
   putBoxOnGoal: function ({x, y}) {
     this.level[y] = replaceAt(this.level[y], x, SOKOBAN.BOX_ON_GOAL);
-
+    this.gameover()
     return this;
   },
 
